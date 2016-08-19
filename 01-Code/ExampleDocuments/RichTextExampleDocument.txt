@@ -1,0 +1,18 @@
+This is a simple sentence.
+This has bold.
+This has italic.
+This is green.
+This is a heading. 
+Animals in no particular order:
+* Zebra
+* Elephant
+* Giraffe
+* Rhino
+Animals ordered by size:
+1. Bug
+2. Snake
+3. Small Dinosaur
+4. Dog
+5. Big Hog
+6. Horse
+7. Big Dinosaur
