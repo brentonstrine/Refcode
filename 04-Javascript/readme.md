@@ -33,7 +33,7 @@ Numbers are indicated with a span of numeric characters and nothing else, not ev
 
 ``` javascript
 var number = 5;
-var number = 59928374982374;
+var number2 = 59928374982374;
 ```
 
 #### Strings
