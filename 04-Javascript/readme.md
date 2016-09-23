@@ -90,7 +90,7 @@ variableOne = variableTwo;
 In this example, `variableOne` has changed three times--in the end it has taken on it's original string value from `variableTwo`.
 
 #### Objects as values
-The values of the items in objects can be any data type, including objects.
+The values of the items in objects can be any value type, including objects.
 ``` javascript
 
 var mediumObject = {
