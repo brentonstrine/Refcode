@@ -1,0 +1,34 @@
+<script>
+var inventory = {
+  hats: {
+      price: {
+          small: 5,
+          medium: 5,
+          large: 1,
+      },
+      weight: {
+          small: 6,
+          medium: 7,
+          large: 8,
+      }
+  },
+  shoes: {},
+  diamonds: {
+      weight: {
+          small: 3,
+          medium: 1,
+          large: 5,
+      },
+  }
+};
+
+inventory.diamonds.price = {
+    small: inventory.diamonds.weight.small * 1000,
+    medium: inventory.diamonds.weight.medium * 1000,
+    large: inventory.diamonds.weight.large * 1000,
+};
+
+inventory.hats.price.small = 10 * inventory.hats.price.small;
+inventory.hats.price.medium = 10 * inventory.hats.price.small;
+inventory.hats.price.large = 10 * inventory.hats.price.small;
+</script>
