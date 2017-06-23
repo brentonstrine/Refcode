@@ -1,0 +1,33 @@
+When I was in high school, around 2001, the teacher of computer science told me and a few
+students that we wanted to build a website for the school. Over that time, in Cuba, we didn't
+have to many computers and that was a hole new world for us. The students selected, including me,
+were very excited about that.
+
+We where delighted of what we were capable to do with only writing a few words in a text document
+saved with a different extension. Over time the teacher showed us new things that we could do,
+such as: marquee, change the color on the text, background, among others. This is what made me get
+into the world of computers.
+
+After that I went to a technician school in computer science and started studying computer science
+as a professional career. All was not so easy of course, my first milestone was with a subject
+called Programming II, we studied Delphi at that time. It was really hard for me to passed that
+subject. I really don't know if it was the teacher or if it was me, but I barely understood
+something.
+
+When I graduated, I started working as a technician trainee. One year later, I started my Bachelors
+Degree in Computer Science at nights while I was working. When I started the coding classes, I met
+a professor, that 6 years later, he became in my theses mentor. Nowadays I owe him all coding I know,
+and thanks to him a became in a Computer Science Engineer.
+
+But becoming a Computer Science Engineer was not so easy as I told you before. There were a lot of
+milestones too. The first one, was with a subject called: "Data Structured", were we learned how
+to code in C++: "lists, trees and graphs". I suspended that subject once, and I had to sing up
+for it again. Also I had others milestones, but were with different subjects; such as: physics,
+among others.
+
+When you think that your are done, that your are not going to have any more troubles in your life,
+there always is something else. My biggest and final milestone in my career was my thesis. After
+6 years of hard studying, without no strength to keep fighting I had to complete a final project
+for my graduation. Those 6 months were really stressful for me, running against the time and perfection.
+
+And this is my developer story.
