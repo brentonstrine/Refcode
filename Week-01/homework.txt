@@ -1,3 +1,5 @@
 typingSpeed: 37 wpm
 brainLoadLevel: 6
 brainLoadURL: https://brentonstrine.github.io/brainload/?hash=96d6Jc6
+brainLoadLevel: 8
+brainLoadURL: http://brainload.brentonstrine.com/?hash=WIN8WIN
