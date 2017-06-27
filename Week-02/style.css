@@ -17,3 +17,7 @@ p {
 img {
   max-width: 200px;
 }
+
+.bold {
+  font-weight: bold;
+}
