@@ -1,0 +1,13 @@
+// Server
+
+Look for the file requested.
+
+if ( file is found ) {
+    Attach the file to to the request.
+    Give the request back to the internet.
+}
+
+if ( file is NOT found ) {
+    Write "Code 404: Not Found" on the request.
+    Give the request back to the internet.
+}
