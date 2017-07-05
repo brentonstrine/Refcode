@@ -1,0 +1,49 @@
+<html>
+<head>
+<style>
+/* default setup for div blocks */
+.block {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-width: 1px;
+    border-color: gray;
+    border-style: dashed;
+    display: inline;
+}
+/* a yellow block */
+.yellow {
+    background-color: yellow;
+}
+/* a black block */
+.black {
+    background-color: black;
+}
+
+</style>
+</head>
+<body>
+    <section class="blocks-container">
+        <div class="block">b</div><div class="block">b</div><div class="block">b</div><div class="block">b</div><div class="block">b</div>
+        <div class="block">b</div><div class="block">b</div><div class="block">b</div><div class="block">b</div><div class="block">b</div>
+        <div class="block">b</div><div class="block">b</div><div class="block">b</div><div class="block">b</div><div class="block">b</div>
+        <div class="block">b</div><div class="block">b</div><div class="block">b</div><div class="block">b</div><div class="block">b</div>
+        <div class="block">b</div><div class="block">b</div><div class="block">b</div><div class="block">b</div><div class="block">b</div>
+    </section>
+    <section>
+        <p>When we changed the blocks from <code>display: block;</code> to <code>display: inline;</code> we lost the ability to specify <code>width</code> and <code>height</code> since inline elements can't have set width or height. We want to be able to treat these as block-level elements but we also want them to be inline. The solution is a hybrid <code>display</code> value called <code>inline-block</code>.</p>
+        <p><b>The challenge:</b> Change the <code>display</code> value of the blocks so that they line up in a line, but also keep their set <code>width</code> and <code>height</code>.
+    </section>
+
+    <section>
+        <p>We want our blocks to line up in a square so that there are five rows with five blocks each row. Right now they <b>wrap</b> to the width of the page. We can shink the width of their container, <code>.blocks-container</code> so that they wrap at the right place to form the grid we want. Our blocks are <code>40px</code> wide with <code>1px</code> borders. What width will we need to set the container to so that the blocks will wrap correctly?</p>
+        <p><b>The challenge:</b> Set the <code>width</code> value of <code>.blocks-container</code> so that the blocks form a square grid. You will need to add a new selector!</p>
+    </section>
+
+    <section>
+        <h2>Advanced</h2>
+        <p>What if we want the letter in each block to be centered? There is a CSS property <code>text-align</code> that can be used to center it horizontally, but there isn't a simple way to align it vertically. One way to align things vertically is to set the <code>line-height</code> to the height of the container and then use <code>vertical-align</code> to center it vertically.</p>
+        <p><b>The challenge:</b> Align the letter in each block to the center.</p>
+    </section>
+</body>
+</html>
