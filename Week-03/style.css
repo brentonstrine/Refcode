@@ -1,0 +1,22 @@
+style.css
+<sytle>
+#header{
+
+  img src: ="images/Logo.jpg" width= 800px; alt="Logo coding";
+}
+
+
+</style>
+<html>
+<head>
+   <link rel="sytlesheet" type="text/css" href="style.css" >
+</head>
+
+<body>
+   <div id="container">
+   <div id="header"> </div>
+   <div id="manu"></div>
+   </div>
+</body>
+
+</html>
