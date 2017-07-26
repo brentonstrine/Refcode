@@ -1,14 +1,52 @@
-style.css
-<sytle>
-#header{
+<style media="screen">
 
-  img src: ="images/Logo.jpg" width= 800px; alt="Logo coding";
+#container {
+width: 800px;
+height: auto;
+margin-right: auto;
+margin-left: auto;
+margin-top: 11px;
+}
+
+#header{
+  height: 200px;
+  background-color: red;
+}
+
+#manu{
+height: 150px;
+background-color: #ecf0f1;
 }
 
 
+#sidebar{
+width: 150px;
+height: 500px;
+background-color: #7f8c8d;
+float: left;
+}
+
+#mainbody{
+width: 650px;
+height: 500px;
+background-color: #d35400;
+float: right;
+}
+
+#footer{
+height: 100px;
+background-color: #f1c40f;
+margin-bottom: 21px;
+clear:both;
+
+}
+
 </style>
 <html>
+
 <head>
+   <title> Kirkukcenter</title>
+   <meta keyword="html5" learn, teach" />
    <link rel="sytlesheet" type="text/css" href="style.css" >
 </head>
 
@@ -16,6 +54,9 @@ style.css
    <div id="container">
    <div id="header"> </div>
    <div id="manu"></div>
+   <div id="sidebar"></div>
+   <div id="mainbody"></div>
+   <div id="footer"></div>
    </div>
 </body>
 
