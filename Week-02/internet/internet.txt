@@ -1,0 +1,9 @@
+// Internet
+
+if (domainName == "brenton.com") {
+    Send request to 72.21.215.90
+}
+
+if (domainName == "jarrett.com") {
+    Send request to 72.21.215.92
+}

@@ -1,0 +1,9 @@
+// Browser
+
+if ( a user or program requests a URL ) {
+    Write that URL into a request, and give it to the internet
+}
+
+if ( internet delivers file ) {
+    Follow instructions of that file and draw it to the whiteboard.
+}
