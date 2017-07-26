@@ -1,0 +1,87 @@
+<html>
+<head>
+<style>
+.canvas {
+  width: 180px;
+  background-color: #ccc;
+  line-height: 10px;
+  border-right: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+}
+.pixel {
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+  border-top: solid 1px #ccc;
+  border-left: solid 1px #ccc;
+  background-color: #fff;
+}
+</style>
+</head>
+<body>
+    <section class="blocks-container">
+        <div class="canvas">
+            <div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div>
+            <div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div>
+            <div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div>
+            <div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div>
+            <div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div>
+            <div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div>
+        </div>
+        <div class="tools">
+            <select class="colorPicker">
+                <option>Color</option>
+                <option>red</option>
+                <option>green</option>
+                <option>blue</option>
+                <option>black</option>
+                <option>white</option>
+                <option selected="selected">yellow</option>
+                <option>green</option>
+                <option>purple</option>
+                <option>gray</option>
+            </select>
+        </div>
+    </section>
+    <script>
+        // get a reference to the color picker dropdown element.
+        var colorPickerDropdwon = document.querySelector(".colorPicker");
+        // get a list of references to all elements with the class `pixel`
+        var pixels = document.querySelectorAll(".pixel");
+
+        // for each item in the above, run a function with the argument `pixel` as a variable containing the individual element with the class name `pixel`
+        pixels.forEach(function(pixel){
+            // when this pixel is clicked, run this function
+            pixel.addEventListener("click", function(){
+                //run the `draw` function, passing the element that was clicked as a parameter
+                draw(this);
+            });
+        });
+
+        // default color is "yellow"
+        var color = "yellow";
+
+        // when the color picker dropdwon is changed, run this function
+        colorPickerDropdwon.addEventListener("change", function(){
+            // change the variable `color` to the currently selected value of the dropdown
+            color = this.value;
+        });
+
+        // function that changes the background color of a given pixel to whatever the `color` variable currently is
+        var draw = function(pixel) {
+        	pixel.style.backgroundColor = color;
+        };
+    </script>
+    <section>
+        <h2>Homework</h2>
+        <ol>
+            <li>Change the default color from "yellow" to "red".</li>
+            <li>Add three more colors to the dropdown.</li>
+            <li>Increase the size of the canvas from 6×6 to 10×10.</li>
+            <li>Change the Javascript so that the pixels are colored on "mouseover" rather than on click.</li>
+            <li>Extra Credit: Add a "erase canvas" button that will reset all pixels to white when clicked. </li>
+            <li>Extra Credit: Add a "fill" feature that will fill the entire canvas with the current color when you click.</li>
+        </ol>
+    </section>
+</body>
+</html>
