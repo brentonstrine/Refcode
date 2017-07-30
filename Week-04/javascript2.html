@@ -16,6 +16,10 @@
 .yellow {
     background-color: yellow;
 }
+/* a red block */
+.red {
+    background-color: red;
+}
 /* a black block */
 .black {
     background-color: black;
@@ -29,7 +33,7 @@
 </head>
 <body>
     <section class="blocks-container">
-        <div class="block">a</div><div class="block">b</div><div class="block">c</div><div class="block">d</div><div class="block">e</div>
+        <div class="block reddy">a</div><div class="block">b</div><div class="block">c</div><div class="block">d</div><div class="block">e</div>
         <div class="block">a</div><div class="block">b</div><div class="block">c</div><div class="block">d</div><div class="block">e</div>
         <div class="block">a</div><div class="block">b</div><div class="block">c</div><div class="block">d</div><div class="block">e</div>
         <div class="block">a</div><div class="block">b</div><div class="block">c</div><div class="block">d</div><div class="block">e</div>
@@ -38,11 +42,14 @@
     <script>
         // get the fancy block
         var fancyBlock = document.querySelector(".fancy");
-
+        var redblock = document.querySelector(".reddy");
         // listen for click on fancy block
         fancyBlock.addEventListener("click", function(){
             // when user clicks on this block, add the class
             this.classList.add("yellow");
+        });
+        redblock.addEventListener("click", function(){
+            this.classList.add("red");
         });
     </script>
 </body>
