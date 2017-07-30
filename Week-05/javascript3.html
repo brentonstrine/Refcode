@@ -31,17 +31,20 @@
         <div class="tools">
             <select class="colorPicker">
                 <option>Color</option>
-                <option>red</option>
+                <option selected="selected">red</option>
                 <option>green</option>
                 <option>blue</option>
                 <option>black</option>
                 <option>white</option>
-                <option selected="selected">yellow</option>
-                <option>green</option>
+                <option>yellow</option>
                 <option>purple</option>
                 <option>gray</option>
+                <option>pink</option>
+                <option>salmon</option>
             </select>
         </div>
+        <br>
+        <div><input name="erase" type="submit" value="Erase Canvas" onclick="white();" /></div>
     </section>
     <script>
         // get a reference to the color picker dropdown element.
@@ -52,14 +55,14 @@
         // for each item in the above, run a function with the argument `pixel` as a variable containing the individual element with the class name `pixel`
         pixels.forEach(function(pixel){
             // when this pixel is clicked, run this function
-            pixel.addEventListener("click", function(){
+            pixel.addEventListener("mouseover", function(){
                 //run the `draw` function, passing the element that was clicked as a parameter
                 draw(this);
             });
         });
 
         // default color is "yellow"
-        var color = "yellow";
+        var color = "red";
 
         // when the color picker dropdwon is changed, run this function
         colorPickerDropdwon.addEventListener("change", function(){
@@ -71,6 +74,7 @@
         var draw = function(pixel) {
         	pixel.style.backgroundColor = color;
         };
+
     </script>
     <section>
         <h2>Homework</h2>
