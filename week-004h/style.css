@@ -1,0 +1,75 @@
+*{
+
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+
+}
+
+
+
+
+
+body{
+
+
+}
+
+.container{
+width: 1200px;
+margin: auto;
+
+}
+
+/* Global */
+
+ul{
+list-style: none;
+margin: 0px;
+padding: 0px;
+
+}
+
+
+
+
+/* end global */
+
+
+
+/* start Navbar */
+
+.navbar{
+	background-color: #3498db;
+	overflow: hidden;
+}
+
+.navbar .brand{
+	width: 40%;
+float: left;
+text-transform: uppercase;
+
+}
+
+.navbar .links{
+float: left;
+width: 60%;
+margin-top: 20px;
+
+}
+
+.navbar .links li{
+
+display: inline-block;
+padding: 15px;
+border-bottom: 2px solid transparent;
+}
+
+.navbar .links li .active{
+
+color: #d35400;
+border-bottom: 2px solid #d35400;
+}
+
+
+/* End Navbar */ 
