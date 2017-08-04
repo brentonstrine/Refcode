@@ -1,0 +1,70 @@
+<div class="one">Box One</div>
+<div class="two">Box Two</div>
+<div class="three">Box Three</div>
+<div class="four">Box Four</div>
+<div class="five">Box Five</div>
+<div class="dynamic"></div>
+<style>
+.dynamic:after {
+    content: ".";
+}
+</style>
+<script>
+var dynamicElement = document.querySelector(".dynamic");
+var alphabet = "qwertyuiopasdfghjklzxcvbnm";
+
+var rewriteDynamicElement = function(){
+    fork(addWord, removeWord);
+};
+
+var addWord = function () {
+    var newContent = dynamicElement.innerText + " " + getNewWord();
+    dynamicElement.innerText = capitalizeFirstLetter(newContent);
+};
+
+var removeWord = function () {
+    var arr = dynamicElement.innerText.split(" ");
+    arr.pop();
+    dynamicElement.innerText = arr.join(" ");
+};
+
+var capitalizeFirstLetter = function (string) {
+    return string.trim().charAt(0).toUpperCase() + string.slice(1);
+}
+
+var getNewWord = function(){
+    var numberOfRandoms = getRandom();
+    var wordLength = 0;
+    var word = "";
+    for(var i=0; i<=numberOfRandoms; i++){
+        wordLength += getRandom();
+    }
+    for(var i=0; i<=wordLength; i++){
+        word += alphabet[Math.floor(Math.random() * alphabet.length)];
+    }
+    return word;
+};
+
+var getRandom = function(){
+    return Math.ceil(Math.random() * 3);
+};
+addWord();
+addWord();
+addWord();
+addWord();
+var everySecond = setInterval(rewriteDynamicElement,403);
+
+var coinFlip = function(){
+    return (Math.floor(Math.random() * 2) == 0) ? true : false;
+};
+
+var fork = function(t, f){
+    if(coinFlip()){
+        t();
+    } else {
+        f();
+    }
+};
+
+
+</script>
