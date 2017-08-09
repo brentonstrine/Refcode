@@ -1,14 +1,22 @@
-<div class="one">Box One</div>
-<div class="two">Box Two</div>
-<div class="three">Box Three</div>
-<div class="four">Box Four</div>
-<div class="five">Box Five</div>
-<div class="dynamic"></div>
-<style>
-.dynamic:after {
-    content: ".";
-}
-</style>
+<!doctype html>
+<html>
+<head>
+    <title>css challenge 5</title>
+    <link rel="stylesheet" href="css5.css"/>
+</head>
+<body>
+    <div classs="container">
+        <div class="block one">Box One</div>
+        <div class="block two">Box Two</div>
+        <div class="block three">Box Three</div>
+        <div class="block four">Box Four</div>
+        <div class="block five">Box Five</div>
+        <div class="block dynamic"></div>
+    </div>
+
+
+<!-- ignore everything below this line-->
+<style>.dynamic:after {content: ".";}</style>
 <script>
 var dynamicElement = document.querySelector(".dynamic");
 var alphabet = "qwertyuiopasdfghjklzxcvbnm";
@@ -68,3 +76,5 @@ var fork = function(t, f){
 
 
 </script>
+</body>
+</html>
