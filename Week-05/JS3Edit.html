@@ -7,7 +7,6 @@
   line-height: 10px;
   border-right: solid 1px #ccc;
   border-bottom: solid 1px #ccc;
-
 }
 .pixel {
   display: inline-block;
@@ -54,7 +53,6 @@
         var colorPickerDropdwon = document.querySelector(".colorPicker");
         // get a list of references to all elements with the class `pixel`
         var pixels = document.querySelectorAll(".pixel");
-
         // for each item in the above, run a function with the argument `pixel` as a variable containing the individual element with the class name `pixel`
         pixels.forEach(function(pixel){
             // when this pixel is clicked, run this function
@@ -63,16 +61,13 @@
                 draw(this);
             });
         });
-
         // default color is "red"
         var color = "red";
-
         // when the color picker dropdwon is changed, run this function
         colorPickerDropdwon.addEventListener("change", function(){
             // change the variable `color` to the currently selected value of the dropdown
             color = this.value;
         });
-
         // function that changes the background color of a given pixel to whatever the `color` variable currently is
         var draw = function(pixel) {
         	pixel.style.backgroundColor = color;

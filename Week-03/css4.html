@@ -15,10 +15,23 @@
 /* a yellow block */
 .yellow {
     background-color: yellow;
+    width: 40px;
+    height: 40px;
+    border-width: 1px;
+    border-color: gray;
+    border-style: dashed;
+    display: inline-block;
+    color: yellow;
 }
 /* a black block */
 .black {
     background-color: black;
+    width: 40px;
+    height: 40px;
+    border-width: 1px;
+    border-color: gray;
+    border-style: dashed;
+    display: inline-block;
 }
 
 .blocks-container {
@@ -29,12 +42,13 @@
 </head>
 <body>
     <section class="blocks-container">
-        <div class="block">b</div><div class="block">b</div><div class="block">b</div><div class="block">b</div><div class="block">b</div>
-        <div class="block">b</div><div class="block">b</div><div class="block">b</div><div class="block">b</div><div class="block">b</div>
-        <div class="block">b</div><div class="block">b</div><div class="block">b</div><div class="block">b</div><div class="block">b</div>
-        <div class="block">b</div><div class="block">b</div><div class="block">b</div><div class="block">b</div><div class="block">b</div>
-        <div class="block">b</div><div class="block">b</div><div class="block">b</div><div class="block">b</div><div class="block">b</div>
+        <div class="yellow" class="block">b</div><div class="yellow" class="block">b</div><div class="yellow" class="block">b</div><div class="yellow" class="block">b</div><div class="yellow" class="block">b</div>
+        <div class="yellow" class="block">b</div><div class="black" class="block">b</div><div class="yellow" class="block">b</div><div class="black" class="block">b</div><div class="yellow" class="block">b</div>
+        <div class="yellow" class="block">b</div><div class="yellow" class="block">b</div><div class="yellow" class="block">b</div><div class="yellow" class="block">b</div><div class="yellow" class="block">b</div>
+        <div class="yellow" class="block">b</div><div class="black" class="block">b</div><div class="yellow" class="block">b</div><div class="black" class="block">b</div><div class="yellow" class="block">b</div>
+        <div class="yellow" class="block">b</div><div class="yellow" class="block">b</div><div class="black" class="block">b</div><div class="yellow" class="block">b</div><div class="yellow" class="block">b</div>
     </section>
+
     <section>
         <p>Let's draw a smiley face.</p>
         <p><b>The challenge:</b> Add a class to the necessary <code>div</code> elements that will turn the background color black. Add this to the elements necessary such that you draw two eyes and a smile.</p>
