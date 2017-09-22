@@ -1,0 +1,5 @@
+This line: var fancyBlock = document.querySelector(".fancy"); gets the first element with class "fancy".
+
+This line: fancyBlock.addEventListener("click", function() is waiting for the block being cliked.
+
+This line: this.classList.add("yellow"); add the class "yellow" to the block.
