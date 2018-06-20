@@ -8,10 +8,14 @@ x = 5;
 // Q: In the code above, what is the value of `x`?
 // A:
 
+
+
 myVariable = 23;
 
 // Q: In the code above, what is the value of `myVariable`?
 // A:
+
+
 
 a = 23;
 b = 45;
@@ -19,6 +23,8 @@ d = 99;
 
 // Q: In the code above, what is the value of `c`?
 // A:
+
+
 
 foo = 1;
 bar = 2;
@@ -28,11 +34,15 @@ qux = 4;
 // Q: In the code above, what is the name of the variable that has the value 3?
 // A:
 
+
+
 thud = 5;
 thud = 1;
 
 // Q: In the code above, what is the value of `thud`?
 // A:
+
+
 
 brenton = -100;
 brenton = 5.5;
@@ -43,10 +53,10 @@ dinosaur = 999999;
 
 // Q: In the code above, what is the value of `dinosaur`?
 // A:
-// Q: In the code above, all of the variables above are "number" type. What do you think are the possible values of the number type?
-// A:
 
-x = 1;
+
+
+x = 5;
 y = x;
 
 // Q: In the code above, what is the value of `x`?
@@ -55,6 +65,8 @@ y = x;
 // A:
 // Q: Are `x` and `y` the same, or are they different?
 // A:
+
+
 
 one = 1;
 two = 2;

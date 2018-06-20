@@ -7,17 +7,26 @@ someWords = "This is some words!";
 // Q: What is the value of `someWords`?
 // A:
 
+
+
+
 aNumber = 4;
 aString = "4";
 
 // Q: What is the value of `aNumber`? What makes it different from `aString`?
 // A:
 
+
+
+
 aString = "true";
 aBoolean = true;
 
 // Q: What is the value of `aBoolean`? What makes it different from `aString`?
 // A:
+
+
+
 
 question0 = true;
 question1 = false;
@@ -31,9 +40,12 @@ question6 = true;
 // Q: What do you think are the possible values of a boolean type variable?
 // A:
 
+
+
+
 foo = true;
 bar = "true"
-baz = 1;
+baz = 6;
 
 // Q: What is the name of the variable that is a "string" type?
 // A:
@@ -41,18 +53,3 @@ baz = 1;
 // A:
 // Q: What is the name of the variable that is a "boolean" type?
 // A:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-foo, bar, baz, qux, quux, corge, uier, grault, garply, waldo, fred, plugh, thud, mos, henk, def.
