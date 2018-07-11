@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+  <title>In Class Exercise</title>
+<style>
+.box {
+  background-color: blue;
+  margin: 10px;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  display: inline;
+  display: block;
+  display: inline-block;
+}
+.vowel {
+  background-color: red;
+}
+</style>
+</head>
+<body>
+  <section class="stringOutput">
+    <input class="placeToPutString" value="" />
+  </section>
+  <section class="spans">
+    <h2>Span elements</h2>
+    <p><code>&lt;span&gt;</code> elements are <b>inline</b> by default.</p>
+    <span onclick="addLetterFunction('a')" class="box vowel">a</span>
+    <span onclick="addLetterFunction('b')" class="box">b</span>
+    <span onclick="addLetterFunction('c')" class="box">c</span>
+    <span onclick="addLetterFunction('d')" class="box">d</span>
+    <span onclick="addLetterFunction('e')" class="box vowel">e</span>
+    <span onclick="addLetterFunction('f')" class="box">f</span>
+    <span onclick="addLetterFunction('g')" class="box">g</span>
+    <span onclick="addLetterFunction('h')" class="box">h</span>
+    <span onclick="addLetterFunction('i')" class="box vowel">i</span>
+    <span onclick="addLetterFunction('j')" class="box">j</span>
+    <span onclick="addLetterFunction('k')" class="box">k</span>
+    <span onclick="addLetterFunction('l')" class="box">l</span>
+    <span onclick="addLetterFunction('m')" class="box">m</span>
+    <span onclick="addLetterFunction('n')" class="box">n</span>
+    <span onclick="addLetterFunction('o')" class="box vowel">o</span>
+    <span onclick="addLetterFunction('p')" class="box">p</span>
+    <span onclick="addLetterFunction('q')" class="box">q</span>
+    <span onclick="addLetterFunction('r')" class="box">r</span>
+    <span onclick="addLetterFunction('s')" class="box">s</span>
+    <span onclick="addLetterFunction('t')" class="box">t</span>
+    <span onclick="addLetterFunction('u')" class="box vowel">u</span>
+    <span onclick="addLetterFunction('v')" class="box">v</span>
+    <span onclick="addLetterFunction('w')" class="box">w</span>
+    <span onclick="addLetterFunction('x')" class="box">x</span>
+    <span onclick="addLetterFunction('y')" class="box">y</span>
+    <span onclick="addLetterFunction('z')" class="box">z</span>
+  </section>
+  <section class="divs">
+    <h2>Div elements</h2>
+    <p><code>&lt;div&gt;</code> elements are <b>block</b> by default.</p>
+    <div onclick="addLetterFunction('a')"  class="box vowel">a</div>
+    <div onclick="addLetterFunction('b')"  class="box">b</div>
+    <div onclick="addLetterFunction('c')"  class="box">c</div>
+    <div onclick="addLetterFunction('d')"  class="box">d</div>
+    <div onclick="addLetterFunction('e')"  class="box vowel">e</div>
+    <div onclick="addLetterFunction('f')"  class="box">f</div>
+    <div onclick="addLetterFunction('g')"  class="box">g</div>
+    <div onclick="addLetterFunction('h')"  class="box">h</div>
+    <div onclick="addLetterFunction('i')"  class="box vowel">i</div>
+    <div onclick="addLetterFunction('j')"  class="box">j</div>
+    <div onclick="addLetterFunction('k')"  class="box">k</div>
+    <div onclick="addLetterFunction('l')"  class="box">l</div>
+    <div onclick="addLetterFunction('m')"  class="box">m</div>
+    <div onclick="addLetterFunction('n')"  class="box">n</div>
+    <div onclick="addLetterFunction('o')"  class="box vowel">o</div>
+    <div onclick="addLetterFunction('p')"  class="box">p</div>
+    <div onclick="addLetterFunction('q')"  class="box">q</div>
+    <div onclick="addLetterFunction('r')"  class="box">r</div>
+    <div onclick="addLetterFunction('s')"  class="box">s</div>
+    <div onclick="addLetterFunction('t')"  class="box">t</div>
+    <div onclick="addLetterFunction('u')"  class="box vowel">u</div>
+    <div onclick="addLetterFunction('v')"  class="box">v</div>
+    <div onclick="addLetterFunction('w')"  class="box">w</div>
+    <div onclick="addLetterFunction('x')"  class="box">x</div>
+    <div onclick="addLetterFunction('y')"  class="box">y</div>
+    <div onclick="addLetterFunction('z')"  class="box">z</div>
+  </section>
+<script>
+var stringOfLetters = "";
+var elementToPutString = document.querySelector(".placeToPutString");
+
+var addLetterFunction = function(letterParam){
+  stringOfLetters = stringOfLetters + letterParam;
+  elementToPutString.value = stringOfLetters;
+};
+</script>
+</body>
+</html>
