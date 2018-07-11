@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <title>In Class Exercise</title>
+<style>
+.dino {
+  width: 50px;
+  height: 50px;
+}
+.predator {
+  width: 150px;
+  height: 150px;
+  justify-self: center;
+}
+.trex {
+    position: relative;
+    top: 38px;
+}
+.compy {
+  position: relative;
+  top: 12px;
+  align-self: end;
+}
+.compy.small {
+  width: 40px;
+  height: 40px;
+  justify-self: end;
+}
+.left {
+  transform: scaleX(-1);
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 3fr 1fr 1fr;
+}
+</style>
+</head>
+<body>
+<section class="container">
+    <img src="compy.svg" class="dino compy left">
+    <img src="compy.svg" class="dino compy left">
+    <img src="compy.svg" class="dino compy small left">
+    <img src="trex.svg" class="dino predator trex">
+    <img src="compy.svg" class="dino compy">
+    <img src="compy.svg" class="dino compy">
+</section>
+<script>
+</script>
+</body>
+</html>
