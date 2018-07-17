@@ -31,19 +31,40 @@
         <div class="block">b</div><div class="block">b</div><div class="block">b</div><div class="block">b</div><div class="block">b</div>
     </section>
     <section>
+      <h2>Challenge 1</h2>
         <p>When we changed the blocks from <code>display: block;</code> to <code>display: inline;</code> we lost the ability to specify <code>width</code> and <code>height</code> since inline elements can't have set width or height. We want to be able to treat these as block-level elements but we also want them to be inline. The solution is a hybrid <code>display</code> value called <code>inline-block</code>.</p>
         <p><b>The challenge:</b> Change the <code>display</code> value of the blocks so that they line up in a line, but also keep their set <code>width</code> and <code>height</code>.
+
+        <p>The solution will look like this:</p>
+        <figure>
+          <img src="css3solution1.png">
+          <figcaption>Screenshot of what the challenge should look like when solved.</figcaption><style scoped>figure img { max-width: 300px; box-shadow: 10px 10px 40px -10px black; margin: 40px;} figure figcaption { max-width: 300px; margin: 0 40px;}</style>
+        </figure>
     </section>
 
     <section>
+      <h2>Challenge 2</h2>
         <p>We want our blocks to line up in a square so that there are five rows with five blocks each row. Right now they <b>wrap</b> to the width of the page. We can shink the width of their container, <code>.blocks-container</code> so that they wrap at the right place to form the grid we want. Our blocks are <code>40px</code> wide with <code>1px</code> borders. What width will we need to set the container to so that the blocks will wrap correctly?</p>
         <p><b>The challenge:</b> Set the <code>width</code> value of <code>.blocks-container</code> so that the blocks form a square grid. You will need to add a new selector!</p>
+
+        <p>The solution will look like this:</p>
+        <figure>
+          <img src="css3solution2.png">
+          <figcaption>Screenshot of what the challenge should look like when solved.</figcaption><style scoped>figure img { max-width: 300px; box-shadow: 10px 10px 40px -10px black; margin: 40px;} figure figcaption { max-width: 300px; margin: 0 40px;}</style>
+        </figure>
     </section>
 
     <section>
-        <h2>Advanced</h2>
+        <h2>Advanced Challenge</h2>
         <p>What if we want the letter in each block to be centered? There is a CSS property <code>text-align</code> that can be used to center it horizontally, but there isn't a simple way to align it vertically. One way to align things vertically is to set the <code>line-height</code> to the height of the container and then use <code>vertical-align</code> to center it vertically.</p>
         <p><b>The challenge:</b> Align the letter in each block to the center.</p>
+
+        <p>The solution will look like this:</p>
+        <figure>
+          <img src="css3advanced.png">
+          <figcaption>Screenshot of what the challenge should look like when solved.</figcaption><style scoped>figure img { max-width: 300px; box-shadow: 10px 10px 40px -10px black; margin: 40px;} figure figcaption { max-width: 300px; margin: 0 40px;}</style>
+        </figure>
     </section>
+
 </body>
 </html>
