@@ -49,18 +49,17 @@ var colorPickerDropdwon = document.querySelector(".colorPicker");
 // get a list of references to all elements with the class `pixel`
 var pixels = document.querySelectorAll(".pixel");
 
-// for each item in the above, run a function with the argument `pixel` as a variable containing the individual element with the class name `pixel`
-pixels.forEach(addListenerFunction, pixel));
-});
-
 // function that adds event listeners
 var addListenerFunction = function(pixel){
     // when this pixel is clicked, run this function
     pixel.addEventListener("click", function(){
         //run the `draw` function, passing the element that was clicked as a parameter
         draw(this);
-    }
+    });
 };
+
+// for each item in the above, run a function with the argument `pixel` as a variable containing the individual element with the class name `pixel`
+pixels.forEach(addListenerFunction);
 
 // default color is "yellow"
 var color = "yellow";
