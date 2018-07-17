@@ -70,8 +70,13 @@
 .ring {
   background-color: red;
   border: solid 5px white;
-  display: inline-block;
   border-radius: 50%;
   padding: 5px;
   font-size: 0;
+}
+
+/* instructions */
+.instructions {
+  position: absolute;
+  top: 200px;
 }
