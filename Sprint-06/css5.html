@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css5.css"/>
 </head>
 <body>
-    <div classs="container">
+    <div class="container">
         <div class="block one">Box One</div>
         <div class="block two">Box Two</div>
         <div class="block three">Box Three</div>
@@ -14,9 +14,64 @@
         <div class="block dynamic"></div>
     </div>
 
+    <section class="fixBottom">
+      <nav>
+        <button onClick="document.querySelector('.challenge1').scrollIntoView()">Challenge 1</button>
+        <button onClick="document.querySelector('.challenge2').scrollIntoView()">Challenge 2</button>
+        <button onClick="document.querySelector('.challenge3').scrollIntoView()">Challenge 3</button>
+        <button onClick="document.querySelector('.challenge4').scrollIntoView()">Challenge 4</button>
+        <button onClick="document.querySelector('.challenge5').scrollIntoView()">Challenge 5</button>
+        <button onClick="document.querySelector('.challenge6').scrollIntoView()">Challenge 6</button>
+      </nav>
+      <h2 class="challenge1">Challenge 1</h2>
+      <p>Give each block a green border and a height of <code>100px</code>.</p>
+      <figure>
+        <img src="css5challenge1.png">
+        <figcaption>Screenshot of what the challenge should look like when solved.</figcaption><style>figure img { max-width: 300px; box-shadow: 10px 10px 40px -10px black; margin: 20px 40px;} figure figcaption { max-width: 300px; margin: 0 40px;}</style>
+      </figure>
+
+      <h2 class="challenge2">Challenge 2</h2>
+      <p>Use <b>CSS Grid</b> and <code>grid-template-columns</code> to align all blocks to a width of <code>1fr</code> except the last block, which should have a width of <code>4fr</code>.</p>
+      <figure>
+        <img src="css5challenge2.png">
+        <figcaption>Screenshot of what the challenge should look like when solved.</figcaption>
+      </figure>
+
+      <h2 class="challenge3">Challenge 3</h2>
+      <p>Make the first block have a width twice as big as the <code>1fr</code> blocks. </p>
+      <figure>
+        <img src="css5challenge3.png">
+        <figcaption>Screenshot of what the challenge should look like when solved.</figcaption>
+      </figure>
+
+      <h2 class="challenge4">Challenge 4</h2>
+      <p>Use CSS Grid to make all blocks have a width of exactly <code>100px</code>, except the last block, which should be flexible and fill the remaining space.</p>
+      <figure>
+        <img src="css5challenge4.png">
+        <figcaption>Screenshot of what the challenge should look like when solved.</figcaption>
+      </figure>
+
+      <h2 class="challenge5">Challenge 5</h2>
+      <p>Make blocks  <code>Two</code> and  <code>Four</code> have a hegiht of 200px;</p>
+      <figure>
+        <img src="css5challenge5.png">
+        <figcaption>Screenshot of what the challenge should look like when solved.</figcaption>
+      </figure>
+
+      <h2 class="challenge6">Challenge 6</h2>
+      <p>All blocks should automatically be set to the height of whichever block has the most content. As content increases, all boxes height increases. As content shrinks, all boxes should decrease in height.</p>
+      <figure>
+        <img src="css5challenge6.gif">
+        <figcaption>Screenshot of what the challenge should look like when solved.</figcaption>
+      </figure>
+    </section>
 
 <!-- ignore everything below this line-->
-<style>.dynamic:after {content: ".";}</style>
+<style>
+  .dynamic:after {content: ".";}
+  .fixBottom { position: fixed; height: 50%; bottom: 0; left: 0; right: 0; overflow: scroll; overflow-y: scroll;border-top: solid 1px gray; padding: 0 20px;}
+  .fixBottom nav { position: fixed; bottom: 50%; left: 0; right: 0; }
+</style>
 <script>
 var dynamicElement = document.querySelector(".dynamic");
 var alphabet = "qwertyuiopasdfghjklzxcvbnm";
@@ -60,7 +115,7 @@ addWord();
 addWord();
 addWord();
 addWord();
-var everySecond = setInterval(rewriteDynamicElement,403);
+var everySecond = setInterval(rewriteDynamicElement,993);
 
 var coinFlip = function(){
     return (Math.floor(Math.random() * 2) == 0) ? true : false;
@@ -73,7 +128,6 @@ var fork = function(t, f){
         f();
     }
 };
-
 
 </script>
 </body>
