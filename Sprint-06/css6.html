@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+    <title>css challenge 5</title>
+    <link rel="stylesheet" href="css6.css"/>
+</head>
+<body>
+    <div class="container">
+      <div class="row1">
+        <header>
+          <h1>
+          This is the title
+          </h1>
+          <div class="heading"></div>
+        </header>
+      </div>
+      <div class="row2">
+        <nav>
+          navbar
+          <div class="navbar"></div>
+        </nav>
+        <main>
+          main
+          <section>
+            <p> This is a section. </p>
+            <p> It has two paragraphs. </p>
+          </section>
+          <section>
+            <p> This is a section. </p>
+            <p> It has more than two paragraphs. </p>
+            <div class="p1"></div>
+          </section>
+        </main>
+        <aside>
+          sidebar
+          <div class="sidebar"></div>
+        </aside>
+      </div>
+      <div class="row3">
+        <footer>
+          footer
+          <div class="footer"></div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- ignore everything below this line-->
+
+    <section class="fixBottom">
+      <h2 class="challenge1">Challenge</h2>
+      <p>Create a page layout with a header, footer, main content area and two sidebars. Create a three-column layout so that the sidebars and the main content area are always the same height, no matter how much content is in any of them. </p>
+      <figure class="inline-block">
+        <img src="css6maintaller.png">
+        <figcaption>The <code>main</code> area is taller.</figcaption><style>figure img { max-width: 300px; box-shadow: 10px 10px 40px -10px black;} figure figcaption { max-width: 300px; margin: 0 40px;}</style>
+      </figure>
+      <figure class="inline-block">
+        <img src="css6sidetaller.png">
+        <figcaption>The sidebar area is taller.</figcaption>
+      </figure>
+    </section>
+
+<style>
+  .dynamic:after {content: ".";}
+  .fixBottom { background-color: white; position: fixed; height: 30%; bottom: 0; left: 0; right: 0; overflow: scroll; overflow-y: scroll;border-top: solid 1px gray; padding: 0 20px;}
+  .fixBottom p { margin: initial; max-width: 800px;}
+  button { width: 90px;}
+  .inline-block { display: inline-block;}
+</style>
+<script>
+
+var DynamicElement = function (selector, initLength) {
+  this.dynamicElement = document.querySelector(selector);
+  this.initLength = initLength;
+  this.alphabet = "qwertyuiopasdfghjklzxcvbnm";
+
+  this.init = function () {
+    var add = document.createElement('button');
+    var remove = document.createElement('button');
+    var wordContainer = document.createElement('p');
+
+    add.textContent = "add word";
+    remove.textContent = "remove word";
+
+    add.addEventListener("click", function () {
+      this.addWord(wordContainer);
+    }.bind(this));
+    remove.addEventListener("click", function () {
+      this.removeWord(wordContainer);
+    }.bind(this));
+    this.dynamicElement.appendChild(add);
+    this.dynamicElement.appendChild(remove);
+    this.dynamicElement.appendChild(wordContainer);
+
+
+      for(i=0;i<initLength;i++){
+       this.addWord(wordContainer);
+      }
+  };
+
+  this.rewriteDynamicElement = function(){
+      this.fork(this.addWord.bind(this), this.removeWord.bind(this));
+  };
+
+  this.addWord = function (target) {
+      var newContent = target.innerText + " " + this.getNewWord();
+      target.innerText = this.capitalizeFirstLetter(newContent);
+  };
+
+  this.removeWord = function (target) {
+      var arr = target.innerText.split(" ");
+      arr.pop();
+      target.innerText = arr.join(" ");
+  };
+
+  this.capitalizeFirstLetter = function (string) {
+      return string.trim().charAt(0).toUpperCase() + string.slice(1);
+  }
+
+  this.getNewWord = function(){
+      var numberOfRandoms = this.getRandom();
+      var wordLength = 0;
+      var word = "";
+      for(var i=0; i<=numberOfRandoms; i++){
+          wordLength += this.getRandom();
+      }
+      for(var i=0; i<=wordLength; i++){
+          word += this.alphabet[Math.floor(Math.random() * this.alphabet.length)];
+      }
+      return word;
+  };
+
+  this.getRandom = function(){
+      return Math.ceil(Math.random() * 3);
+  };
+};
+
+
+
+var heading =  new DynamicElement(".heading", 10).init();
+var navbar =  new DynamicElement(".navbar", 10).init();
+var p1 =  new DynamicElement(".p1", 10).init();
+var sidebar =  new DynamicElement(".sidebar", 25).init();
+var footer =  new DynamicElement(".footer", 0).init();
+</script>
+</body>
+</html>

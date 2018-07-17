@@ -1,0 +1,34 @@
+header {
+  background-color: blue;
+}
+nav {
+  background-color: green;
+}
+main {
+  background-color: tan;
+}
+aside {
+  background-color: orange;
+}
+footer {
+  background-color: pink;
+}
+section {
+  background-color: antiquewhite;
+}
+p {
+  background-color: white;
+  margin: 20px;
+}
+header, nav, main, aside, footer {
+  overflow: hidden;
+}
+.container {
+  max-width: 900px;
+}
+
+
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
