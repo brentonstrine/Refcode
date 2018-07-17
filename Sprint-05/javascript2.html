@@ -32,15 +32,13 @@
             <select class="colorPicker">
                 <option>Color</option>
                 <option>red</option>
-                <option>green</option>
-                <option>blue</option>
                 <option>black</option>
                 <option>white</option>
                 <option selected="selected">yellow</option>
-                <option>green</option>
-                <option>purple</option>
                 <option>gray</option>
             </select>
+            <button>erase</button>
+            <button>fill</button>
         </div>
     </section>
 <script>
@@ -48,18 +46,6 @@
 var colorPickerDropdwon = document.querySelector(".colorPicker");
 // get a list of references to all elements with the class `pixel`
 var pixels = document.querySelectorAll(".pixel");
-
-// function that adds event listeners
-var addListenerFunction = function(pixel){
-    // when this pixel is clicked, run this function
-    pixel.addEventListener("click", function(){
-        //run the `draw` function, passing the element that was clicked as a parameter
-        draw(this);
-    });
-};
-
-// for each item in the above, run a function with the argument `pixel` as a variable containing the individual element with the class name `pixel`
-pixels.forEach(addListenerFunction);
 
 // default color is "yellow"
 var color = "yellow";
@@ -71,17 +57,27 @@ colorPickerDropdwon.addEventListener("change", function(){
 });
 
 // function that changes the background color of a given pixel to whatever the `color` variable currently is
-var draw = function(pixel) {
-	pixel.style.backgroundColor = color;
+var draw = function() {
+	this.style.backgroundColor = color;
 };
+
+// function that adds event listeners
+var addListenerFunction = function(pixel){
+    // when this pixel is clicked, run this function
+    pixel.addEventListener("mouseover", draw);
+};
+
+// for each item in pixels, run the addListenerFunction.
+pixels.forEach(addListenerFunction);
+
 </script>
     <section>
         <h2>Homework</h2>
         <ol>
-            <li>Change the default color from "yellow" to "red". (Hint: look for "selected".)</li>
+            <li>Change the default color from "yellow" to "red". (Hint: look for "selected". Also look for "default color".)</li>
             <li>Add three more colors to the dropdown.</li>
-            <li>Increase the size of the canvas from 6×6 to 10×10. (You will need to add more HTML elements.)</li>
-            <li>Change the Javascript so that the pixels are colored on "mouseover" rather than on click. (Hint: search for "click" in this file.)</li>
+            <li>Increase the size of the canvas from 6×6 to 10×10. (You will need to add more HTML elements. You will also need to modify the width of the container class.)</li>
+            <li>Change the Javascript so that the pixels are colored on "<code>mouseover</code>" rather than on click. (Hint: search for "click" in this file.)</li>
             <li>Advanced Students: Add a "erase canvas" button that will reset all pixels to white when clicked. </li>
             <li>Advanced Students: Add a "fill" feature that will fill the entire canvas with the current color when you click.</li>
         </ol>
