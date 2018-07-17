@@ -1,0 +1,77 @@
+/* archery range */
+.archeryRange {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+}
+
+/* arrow */
+.arrow {
+    background: brown;
+    border: solid 1px white;
+    margin: 20px;
+    height: 4px;
+    width: 120px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.arrow-feather {
+    width: 20px;
+    height: 14px;
+    position: relative;
+    background: orange;
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    z-index: -1;
+  }
+.arrow-feather:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 7px solid white;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+  }
+.arrow-feather:before {
+    content: "";
+    position: absolute;
+    right: -7px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 7px solid orange;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+  }
+.arrow-head {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-left: 15px solid lightgray;
+  border-bottom: 4px solid transparent;
+  right: 0;
+  top: 50%;
+  margin-top: -4px;
+  margin-right: -14px;
+}
+
+/* target */
+.target {
+  position: absolute;
+  right: 20px;
+  z-index: -1;
+}
+.ring {
+  background-color: red;
+  border: solid 5px white;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 0;
+}
