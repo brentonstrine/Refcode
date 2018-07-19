@@ -26,9 +26,3 @@ header, nav, main, aside, footer {
 .container {
   max-width: 900px;
 }
-
-
-.row2 {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-}
