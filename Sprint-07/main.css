@@ -1,0 +1,45 @@
+/* Heading */
+.heading {
+}
+
+/* Navbar */
+.navbar-container {
+
+}
+.navbar-nav {
+  padding: 0;
+}
+.nav-item {
+   display: block;
+}
+.nav-link {
+
+}
+.nav-link__active {
+    font-weight: bold;
+}
+
+/* Main */
+.main-container {
+
+}
+.main-heading {
+
+}
+.main-content {
+
+}
+
+/* Footer */
+.footer {
+}
+
+
+
+
+
+
+
+
+
+
