@@ -26,3 +26,14 @@ header, nav, main, aside, footer {
 .container {
   max-width: 900px;
 }
+
+
+nav, main, aside {
+  display: inline-block;
+}
+nav, aside {
+  width: 25%;
+}
+main {
+  width: 49%;
+}
